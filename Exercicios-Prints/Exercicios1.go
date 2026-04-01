@@ -14,5 +14,4 @@ func main() {
 	fmt.Println(z)
 
 	fmt.Println(x, y, z)
-
 }
