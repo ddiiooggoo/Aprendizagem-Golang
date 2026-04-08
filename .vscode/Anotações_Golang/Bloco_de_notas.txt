@@ -157,3 +157,10 @@ São sucessivas constantes tipadas inteiras que ainda não foram usadas.
 
 ===========================================================================================================================
 
+**Loop for**
+
+FOR - Inicialização, condição, pós
+
+Exem. for x := 0; x < 10; x++
+
+For - Repetição hirárquica = um loop dentro do outro
