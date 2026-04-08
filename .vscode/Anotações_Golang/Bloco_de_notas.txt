@@ -134,7 +134,7 @@ booleanos
 Float16/32/64
 
 Como ver o valor em binário, decimal e hexadecimal ("%b\t%b\t%#x", a, a, a)
-Como fazer a conversão de uma string  - []bytes(s) -> s é a variávedeclarada.
+Como fazer a conversão de uma string  - []bytes(s) -> s é a variáve declarada.
 
 ===========================================================================================================================
 
