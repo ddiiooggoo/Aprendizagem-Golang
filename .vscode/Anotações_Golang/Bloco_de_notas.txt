@@ -1,0 +1,159 @@
+27/03/2026
+Inicio das aulas de Golang
+
+===========================================================================================================================
+**Estrutura básica - Hello Word!!**
+
+Package main é o package principal
+
+Function main = A 1ª linha do função main é a 1ª linha executada
+                E a última linha é a última ação executada
+				
+				A função main é a porta de entrada e saída em Go.
+				
+A notação é sempre pacote.identificador
+
+O Uso do _ é sempre quando eu tenho uma variável e não vou usa-lá.
+
+===========================================================================================================================
+
+**Operador curto de declaração := (gopher)**
+				Ele já atribui um tipo com base no valor variável.
+	
+Ele serve para declarar variáveis - Toda vez que for usado é necessário que pelo menos 1 variável seja declara.
+	Ex: name   := Diogo
+	Ex: idade := 39
+	
+===========================================================================================================================
+
+**Keyword - Var**
+	
+Para declarar uma variável com package level scope, precisa do VAR e declarar fora do codeblock
+
+	EX: package main
+	
+		import (
+				"fmt"
+			)
+		
+		var y = 10   **Aqui está a declaração do VAR fora do codeblock (package level scope).
+		
+		func main () {
+				z := 20
+				qualquercoisa(z)
+		}
+		 
+		func qualquercoisa(x int) {
+				fmt.Println(y)
+				fmt.Println(x)
+				
+		}
+		
+===========================================================================================================================
+
+**Tipos de dados**
+
+Os tipos em Go sem sempre estáticos - uma vez declado não dá para alterar, a não ser criando outra variável.
+	Ou seja Go é uma linguagem de tipagem estática.
+	
+Se o valor para uma variável não for declarado,
+isso só poderá ser feito dentro de um codeblock
+
+	EX: var x := 10 (pode ser chamado dentro package level scope
+	EX: var x = (só pode ser chamado dentro do codeblock
+	
+Tipos de dados primitivos: strings / int / bool
+Tipos de dados compostos (criado pelo usuário a partir dos dados primitivos) - Chama-se **Composição*.
+
+===========================================================================================================================
+
+**Valor zero**
+
+Declaração vs inicialização vs atribuição de variáveis
+	
+	Declaração = "Caixa Postal"
+	Inicialização = "Quando eu guardo X pela primeira vez"
+	Atribuição = "Quando eu jogo X fora e agora ponho um Y"
+	
+O valor zero é o que uma variável contém antes de ser inicializada.
+
+	ints: 0
+	float64: 0.0
+	strind: ""
+	bool: false
+	
+	EX: package main
+
+		import (
+			"fmt"
+		)
+
+		var a int
+		var b float64
+		var c string
+		var d bool
+
+		func main() {
+			fmt.Printf("%v, %T\n", a, a)
+			fmt.Printf("%v, %T\n", b, b)
+			fmt.Printf("%v, %T\n", c, c)
+			fmt.Printf("%v, %T\n", d, d)
+		}
+		
+===========================================================================================================================
+
+**Package- fmt**
+
+Existem 3 grupos principais
+	Grupo 1: Print - standard out
+		- func Print	(Escreve na tela)
+		- func Println	(Escreve na tela e pula uma linha)
+		- func Printf	(O valor é salvo numa String).
+		
+	Grupo 2: Print - string, pode ser usado como variável
+		- func Sprint 	(interface{}) string
+		- func Sprintln (format string, interface) string / Pula uma linha.
+		- func Sprintf	(interface{}) string
+		
+	Grupo 3: Print - file , write interface - arquivo ou resposta de servidor
+		- func Fprint	(usa de input como entrada)
+		- func Fprintls	(usa de input como entrada) / / Pula uma linha.
+		- func Fprintf	()
+		
+===========================================================================================================================
+
+**Strings**
+
+Como ver o valor e o tipo da string = ("%v, %T", a, a)
+
+===========================================================================================================================
+
+**Tipos numéricos**
+Inteiros
+booleanos
+Float16/32/64
+
+Como ver o valor em binário, decimal e hexadecimal ("%b\t%b\t%#x", a, a, a)
+Como fazer a conversão de uma string  - []bytes(s) -> s é a variávedeclarada.
+
+===========================================================================================================================
+
+**Constantes**
+
+Constantes são como variáveis, mas os seus valores não podem nunca ser alterados.
+
+O endereço do banco de dados é um bom exemplo de constante.
+
+**O tipo de uma variavél é definido no momento da atribuição.
+**O tipo de uma constante só é definido no momento do uso.
+
+Constantes podem ser do tipo INT, Strings, Float, Booleanos.
+
+===========================================================================================================================
+
+**Iotas**
+
+São sucessivas constantes tipadas inteiras que ainda não foram usadas.
+
+===========================================================================================================================
+
