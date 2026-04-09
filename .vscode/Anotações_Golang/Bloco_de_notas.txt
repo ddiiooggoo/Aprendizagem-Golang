@@ -157,10 +157,20 @@ São sucessivas constantes tipadas inteiras que ainda não foram usadas.
 
 ===========================================================================================================================
 
-**Loop for**
+Fluxo de controle
+**Loop - Declaração for**
 
 FOR - Inicialização, condição, pós
 
 Exem. for x := 0; x < 10; x++
 
 For - Repetição hirárquica = um loop dentro do outro
+
+Em Go não existe o loop "While" = Ele pode ser usado com as 3 instruções ou com somente 1 condição.
+
+FOR - Uso infinito e o break para sair do loop infinito
+
+===========================================================================================================================
+
+Fluxo de controle.
+****Loop - break e Continue**
